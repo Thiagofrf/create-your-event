@@ -12,10 +12,12 @@
     --notes-texts: #C1BCCC;
     --notes-texts-highlight: #6C6A71;
     --green-bg: #04D361;
+    --green-bg-hover: #007e39;
     --color-white: #FFF;
     --secondary-title: #42D3FF;
     --form-bg: #FAFAFC;
     --border-color: #E6E6F0;
+    --button-container-bg: #F0F0F4;
 }
 
 body {
@@ -43,7 +45,7 @@ header {
     width: 50%;
 }
 
-header h1, form fieldset legend {
+header h1, form fieldset legend, footer .button {
     font-family: 'Archivo', sans-serif;
 }
 
@@ -192,4 +194,25 @@ form fieldset label select {
 
 .checkbox-wrapper input:focus + label::before {
     outline: 2px solid black;
+}
+
+footer {
+    background: var(--button-container-bg);
+    height: 136px;
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+    width: 100%;
+    height: 56px;
+    background-color: var(--green-bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-white);
+}
+
+footer .button:hover {
+    background-color: var(--green-bg-hover);
 }
