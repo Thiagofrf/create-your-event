@@ -215,4 +215,5 @@ footer .button {
 
 footer .button:hover {
     background-color: var(--green-bg-hover);
+    cursor: pointer;
 }
