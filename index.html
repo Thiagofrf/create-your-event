@@ -38,11 +38,16 @@
                     </label>
                     <label for="event-extra">
                         <p>Informações extras</p>
-                        <input type="text" id="event-extra">
+                        <textarea id="event-extra" cols="30" rows="10"></textarea>
                     </label>
                     <label for="event-category">
                         <p>Categoria</p>
-                        <input type="text" id="event-category">
+                        <!-- <input type="text" id="event-category"> -->
+                        <select id="event-category">
+                            <option value="live">Ao vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentorship">Mentoria</option>
+                        </select>
                     </label>
                 </div>
             </fieldset>
