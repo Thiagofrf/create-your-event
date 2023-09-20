@@ -66,28 +66,32 @@
                         <p>Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></p>
                         <input type="password" id="privacy-password">
                     </label>
-                    <label for="privacy-type">
-                        <p>Evento privado</p>
+                    <div class="checkbox-wrapper">
                         <input type="checkbox" id="privacy-type">
-                    </label>
+                        <label for="privacy-type">
+                            <p>Evento privado</p>
+                        </label>
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Dia e hora</legend>
                 <hr>
                 <div class="input-wrapper">
-                    <label for="date-date">
-                        <p>Data</p>
-                        <input type="email" id="date-date">
-                    </label>
-                    <label for="date-begin">
-                        <p>Das</p>
-                        <input type="password" id="date-begin">
-                    </label>
-                    <label for="date-end">
-                        <p>Até</p>
-                        <input type="password" id="date-end">
-                    </label>
+                    <div class="date-time-wrapper">
+                        <label for="date-date">
+                            <p>Data</p>
+                            <input type="date" id="date-date">
+                        </label>
+                        <label for="date-begin">
+                            <p>Das</p>
+                            <input type="time" id="date-begin">
+                        </label>
+                        <label for="date-end">
+                            <p>Até</p>
+                            <input type="time" id="date-end">
+                        </label>
+                    </div>
                 </div>
             </fieldset>
             <button type="submit">Salvar evento </button>
